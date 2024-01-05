@@ -1,5 +1,8 @@
 #!/usr/bin/python3
-
+"""
+Starts a flask server and returns
+Hello HBNB in the root route
+"""
 from flask import Flask
 
 app = Flask(__name__)
