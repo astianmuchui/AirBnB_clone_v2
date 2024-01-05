@@ -19,20 +19,27 @@ def home():
 
 @app.route("/hbnb", strict_slashes=False)
 def hbnb_route():
-    """
-    The hbnb route
-    """
-    return "HBNB"
+  """The hbnb route"""
+
+  return "HBNB"
 
 
 @app.route("/c/<text>", strict_slashes=False)
 def c_route(text):
+  """
+  The C route
+  """
+  
   text = text.replace("_", " ")
   return "C {}".format(text)
 
 
 @app.route("/python/<text>", strict_slashes=False)
 def python_route(text="is cool"):
+  """
+  The python route
+  """  
+
   text = text.replace("_", " ")
   return "Python {}".format(text)
 
