@@ -52,7 +52,7 @@ def number_route(n):
   return "{} is a number".format(n)
 
 
-@app.route("/number_template/<int:n>")
+@app.route("/number_template/<int:n>", strict_slashes=False)
 def number_template(n):
   """
   The number template route
